@@ -1,0 +1,162 @@
+{
+  "id": "xingliuchao.app.sub",
+  "name": "xingliuchao 脚本辅助(自用）",
+  "author": "@xingliuchao",
+  "icon": "https://avatars3.githubusercontent.com/u/62364023?s=460&u=dd3390d84bbb1774f3f8692e0ec57dcfea3c2a0c&v=4",
+  "repo": "https://github.com/xingliuchao/jd/tree/main",
+  "apps": [{
+    "id": "qqreadsp",
+   "name": "QQ阅读多账号(自用)",
+      "descs_html": [
+        "使用说明：",
+	      "为了一步到位成功，❗请按以下步骤操作❗，尽量避免出错。老鸟飘过(*^_^*)",
+              "1.Cookie获取方式【<a href=\"https://m.q.qq.com/a/s/f9726d0a930319a7dd35bbcc8e42dc60 \">点我打开</a>】已测试圈叉与loon.",
+	      "2.点开【<a href=\"https://raw.githubusercontent.com/xingliuchao/jd/main/ps.txt\">ps.txt</a>】添加引用获取Cookie与Task.注意要启用→重写引用",			
+              "3.在以下要抓账号中填写要获取的序号",
+	      "4.从书库看①本📕新书📕新书！！看5秒然后左上角返回，获取cookie与body❀共3项。☞保存设置😀",
+	      "5.切换QQ账号♥♥循环1-3-4（2已引用，不必重复）重新获取下个账号.可以N多账号，6后面直接填写7.8..❗️完成后禁用重写规则",
+	      "6.感谢ziye付出"],
+      "keys": ["qqreadbd", "qqreadtimeurl", "qqreadtimehd", "qqreadbd2", "qqreadtimeurl2", "qqreadtimehd2", "qqreadbd3", "qqreadtimeurl3", "qqreadtimehd3", "qqreadbd4", "qqreadtimeurl4", "qqreadtimehd4", "qqreadbd5", "qqreadtimeurl5", "qqreadtimehd5", "qqreadbd6", "qqreadtimeurl6", "qqreadtimehd6", "qqreadbd7", "qqreadtimeurl7", "qqreadtimehd7", "qqreadbd8", "qqreadtimeurl8", "qqreadtimehd8", "qqreadbd9", "qqreadtimeurl9", "qqreadtimehd9", "qqreadbd10", "qqreadtimeurl10", "qqreadtimehd10"],
+    "settings": [{
+        "id": "qeSuffix",
+        "name": "要抓账号",
+        "val": "1",
+        "type": "number",
+        "desc": "当前要抓取cookie的账号序号，如：1、2、3、4"
+      },
+      {
+        "id": "qeCount",
+        "name": "运行账号个数",
+        "val": "1",
+        "type": "number",
+        "desc": "要同时跑几个账号"
+      }
+    ],
+    "script": "https://raw.githubusercontent.com/xingliuchao/jd/main/QQread.js",
+     "repo": ["https://github.com/xingliuchao/jd/blob/main/QQread.js"],
+     "author": "@xingliuchao",    
+     "icons": ["https://raw.githubusercontent.com/xingliuchao/jd/main/xingliuchao.png", "https://raw.githubusercontent.com/xingliuchao/jd/main/png/qieread.png"] 
+  },
+  {
+      "id": "carhome",
+      "name": "汽车之家极速版",
+      "descs_html": [
+       "使用说明:将近20个获取值🤦‍做好耐心准备",
+	  "仅辅助使用，🚗本脚本来自ziye，感谢付出🚗 邀请码  48635465 🎈 填写后都会有金币奖励，ziye码在脚本里",
+          "需要获取的东西较多，请耐心操作，细心读完，避免失败",
+	      "最好耐心跟做，希望成功。为了一步到位成功，❗请按以下步骤操作❗，尽量避免出错。老鸟飘过(*^_^*)",
+              "a.Cookie获取方式【<a href=\"http://athm.cn/z5tSeuc \">点我打开，进入app</a>】已测试圈叉与loon.",
+	      "b.点开【<a href=\"https://raw.githubusercontent.com/xingliuchao/jd/main/ps.txt\">ps.txt</a>】添加引用获取Cookie与Task.注意要启用→重写引用.❗成功header后禁用该条引用",	
+	   "1.引用第一个重写---我>>获取用户名header",
+           "2.注释header重写 ",
+	   "3.添加第一个body重写😀即引用第二个重写",
+	   "4.活动 获取账户信息 签到任务 活动body",
+	   "5.首页>>右上角 获取时段 时段翻倍body",
+	   "6.活动>>分享赚现金 自己助力自己 获取助力任务body" ,
+	   "7.活动>>现金收入>>提现>>立即提现 获取提现body",
+           "8.点击此处将图片微信发送给自己【<a href=\"https://raw.githubusercontent.com/ziye12/QCZJSPEED/main/Task/qczjzl.png\">qczjzl.png</a>】，微信识别小程序进行助力，获取助力任务header-body",
+	   "9.⚠️⚠️⚠️以上CK全部获取完以后，添加时段body重写即第3个重写引用，在boxjs里设置ins的值，再按操作获取活动页面body",
+	     "设置ins=1点击 活动 右上角领惊喜福利 获取惊喜福利body",
+	     "设置ins=2点击 活动 看视频领金币 获取视频body",
+             "设置ins=3点击 活动 观看福利视频 获取福利视频body",
+             "设置ins=4点击 活动 领取福利 获取福利body", 
+            "9.❗❗❗❗❗获取完整后一定要禁用关于汽车之家的所有重写引用，因为它会导致别的APP无网络",
+         "c.看到这了建议填写邀请码助力😀获取金币,以下必须细心操作🙃"],
+      "author": "@xingliuchao",
+            "settings": [
+		    {
+			"id": "notifyInterval",
+			"name": "默认开启通知",
+			"val": "1",
+			"type": "radios",
+			"desc": "根据实际情况选择",
+                        "items": [
+            {
+              "key": "0",
+              "label": "关闭通知"
+            },
+            {
+              "key": "1",
+              "label": "开启通知"
+            }
+            
+          ]
+	    },    
+	    {
+               "id": "qczjIns",
+               "name": "仅关于活动页面改Ins获取body,即第3个重写引用开启---0不获取",
+               "val": "0",
+               "type": "number",
+               "desc": "0不获取，1获取惊喜福利body，2获取视频body,3获取福利视频body,4获取福利body"
+                 }
+	    ],
+      "icons": ["https://raw.githubusercontent.com/xingliuchao/jd/main/xingliuchao.png", "https://raw.githubusercontent.com/xingliuchao/jd/main/png/carhome.png"],
+      "repo": "https://github.com/ziye12/QCZJSPEED/blob/main/Task/qczjspeed.js",
+      "script": "https://raw.githubusercontent.com/ziye12/QCZJSPEED/main/Task/qczjspeed.js"    
+      },  
+     {
+    "id": "QreadAPP",
+    "name": "QQ阅读APP",
+     "descs_html": [
+       "使用说明:",
+	  "签到，看视频，开宝箱--cookie引用在QQreadCookie内"],
+    "keys": ["QQreadhd", "QQreadvideohd"],
+    "author": "@xingliuchao",
+    "repo": "https://github.com/ziye12/JavaScript/blob/master/Task/QQread.js",
+    "icons": ["https://raw.githubusercontent.com/xingliuchao/jd/main/xingliuchao.png", "https://raw.githubusercontent.com/xingliuchao/jd/main/png/QQreadapp.png"],
+    "script": "https://raw.githubusercontent.com/ziye12/JavaScript/master/Task/QQread.js"
+     },
+     {
+    "id": "jrtt",
+    "name": "今日头条极速版",
+     "descs_html": [
+       "使用说明:",
+	  "仅辅助使用， 😀邀请码 1465420698 🎈 填写后你得一元😀",
+	      "为了一步到位成功，❗请按以下步骤操作❗，尽量避免出错。老鸟飘过(*^_^*)",
+              "a.点开（shareCode）复制整段话打开头条极速版助个力😀【<a href=\"https://raw.githubusercontent.com/xingliuchao/jd/main/shareCode.txt\">shareCode.txt</a>】已测试圈叉与loon",
+	      "b.点开【<a href=\"https://raw.githubusercontent.com/xingliuchao/jd/main/ps.txt\">ps.txt</a>】添加引用获取Cookie.注意要启用→重写引用",	
+           "签到即可获取签到cookie 进一次农场即可获取农场cookie  读文章弹出金币获取读文章cookie❗成功后禁用该条引用"],
+    "keys": ["farmurl", "farmkey", "signurl", "signkey", "readurl", "readkey"],
+     "settings": [
+       {
+			"id": "notify",
+			"name": "默认开启通知",
+			"val": "1",
+			"type": "radios",
+			"desc": "根据实际情况选择",
+                        "items": [
+            {
+              "key": "0",
+              "label": "关闭通知"
+            },
+            {
+              "key": "1",
+              "label": "开启通知"
+            }]
+	 }	  
+    ],
+	     
+    "author": "@xingliuchao",
+    "repo": "https://github.com/xingliuchao/jd/blob/main/jrtt.js",
+    "icons": ["https://raw.githubusercontent.com/xingliuchao/jd/main/xingliuchao.png", "https://raw.githubusercontent.com/xingliuchao/jd/main/png/tt.png"],
+    "script": "https://raw.githubusercontent.com/xingliuchao/jd/main/jrtt.js"
+     },
+      {
+    "id": "BaiduSP",
+    "name": "百度极速",
+     "descs_html": [
+       "使用说明:",
+	     "为了一步到位成功，❗请按以下步骤操作❗，尽量避免出错。老鸟飘过(*^_^*)",
+	      "有必要的一步👉【<a href=\"https://dwz.cn/PTCBgNNk \">点我打开</a>】👈.",
+	      "1.Cookie获取方式【<a href=\" https://tieba.baidu.com \">点我打开，进入登陆</a>】.",
+	      "2.点开【<a href=\"https://raw.githubusercontent.com/xingliuchao/jd/main/ps.txt\">ps.txt</a>】，添加引用获取Cookie与Task.注意要启用→重写引用",
+	      "进入刚才那个网页并刷新网页",
+              "3.❗️完成后禁用重写规则，感谢sunert大佬"],
+    "keys": ["CookieTB"],
+    "author": "@chavyleung-xingliuchao",
+    "repo": "https://github.com/sazs34/TaskConfig/blob/master/task/sign_baidu_tieba_v2.js",
+    "script": "https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js",
+    "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/baidu.png", "https://raw.githubusercontent.com/Orz-3/task/master/baidu.png"]
+     }    
+ ]
+}
