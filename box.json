@@ -30,7 +30,14 @@
         "val": "1",
         "type": "number",
         "desc": "要同时跑几个账号"
-      }
+      },
+	{
+        "id": "qeCASH",
+        "name": "体现金额",
+        "val": "0",
+        "type": "number",
+        "desc": "要提现金额数 0,1,2,10"
+      }	 
     ],
     "script": "https://raw.githubusercontent.com/xingliuchao/jd/main/QQread.js",
      "repo": ["https://github.com/xingliuchao/jd/blob/main/QQread.js"],
