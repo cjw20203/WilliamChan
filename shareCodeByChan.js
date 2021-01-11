@@ -28,12 +28,13 @@ cron "15,20 10 1,10,20 * *" script-path=https://raw.githubusercontent.com/photon
 
 const jsname='互助码提交'
 const $ = Env(jsname)
-const dd_shareCode1 = $.getdata('dd_shareCode1') ;
-const jx_shareCode1 = $.getdata('jx_shareCode1') ;
-const zd_shareCode1 = $.getdata('zd_shareCode1') ;
-const nc_shareCode1 = $.getdata('nc_shareCode1') ;
-const mc_shareCode1 = $.getdata('mc_shareCode1') ;
-const joy_shareCode1 = $.getdata('joy_shareCode1') ;
+const dd_shareCode1 = $.getdata('dd_shareCode1') ;//东东工厂
+const jx_shareCode1 = $.getdata('jx_shareCode1') ;//惊喜工厂
+const zd_shareCode1 = $.getdata('zd_shareCode1') ;//种豆得豆
+const nc_shareCode1 = $.getdata('nc_shareCode1') ;//东东农场
+const mc_shareCode1 = $.getdata('mc_shareCode1') ;//萌宠
+const joy_shareCode1 = $.getdata('joy_shareCode1') ;//crazy joy
+const zz_shareCode1 = $.getdata('zz_shareCode1') ;//京东赚赚
 
 const dd_shareCode2 = $.getdata('dd_shareCode2') ;
 const jx_shareCode2 = $.getdata('jx_shareCode2') ;
@@ -41,6 +42,7 @@ const zd_shareCode2 = $.getdata('zd_shareCode2') ;
 const nc_shareCode2 = $.getdata('nc_shareCode2') ;
 const mc_shareCode2 = $.getdata('mc_shareCode2') ;
 const joy_shareCode2 = $.getdata('joy_shareCode2') ;
+const zz_shareCode2 = $.getdata('zz_shareCode2') ;
 
 const dd_shareCode3 = $.getdata('dd_shareCode3') ;
 const jx_shareCode3 = $.getdata('jx_shareCode3') ;
@@ -48,6 +50,7 @@ const zd_shareCode3 = $.getdata('zd_shareCode3') ;
 const nc_shareCode3 = $.getdata('nc_shareCode3') ;
 const mc_shareCode3 = $.getdata('mc_shareCode3') ;
 const joy_shareCode3 = $.getdata('joy_shareCode3') ;
+const zz_shareCode3 = $.getdata('zz_shareCode3') ;
 
 let dd_shareCodeVal = "";
 let jx_shareCodeVal = "";
@@ -55,12 +58,14 @@ let zd_shareCodeVal = "";
 let nc_shareCodeVal = "";
 let mc_shareCodeVal = "";
 let joy_shareCodeVal = "";
+let zz_shareCodeVal = "";
 const  dd_shareCodeArr = [];
 const  jx_shareCodeArr = [];
 const  zd_shareCodeArr = [];
 const  nc_shareCodeArr = [];
 const  mc_shareCodeArr = [];
 const  joy_shareCodeArr = [];
+const  zz_shareCodeArr = [];
 let K = 0;
 let tz='';
 let gg;
@@ -76,6 +81,7 @@ for (let index = 1; index <= 3; index++) {
     nc_shareCodeArr.push($.getdata("nc_shareCode"+index));
     mc_shareCodeArr.push($.getdata("mc_shareCode"+index));
     joy_shareCodeArr.push($.getdata("joy_shareCode"+index));
+    zz_shareCodeArr.push($.getdata("zz_shareCode"+index));
   }
       if 
 	(dd_shareCodeArr.length &&
@@ -83,14 +89,16 @@ for (let index = 1; index <= 3; index++) {
 	 zd_shareCodeArr.length &&
 	 nc_shareCodeArr.length &&
 	 mc_shareCodeArr.length &&
-	 joy_shareCodeArr.length >=1)
+	 joy_shareCodeArr.length &&
+	 zz_shareCodeArr.length >=1)
       {
 	 gg=dd_shareCodeArr.length &&
 	 jx_shareCodeArr.length &&
 	 zd_shareCodeArr.length &&
 	 nc_shareCodeArr.length &&
 	 mc_shareCodeArr.length &&
-	 joy_shareCodeArr.length
+	 joy_shareCodeArr.length &&
+	 zz_shareCodeArr.length	 
 	}
 
     console.log(`============ 共${gg}个京东账号  =============\n`)
@@ -103,7 +111,8 @@ function all() {
   nc_shareCodeVal = nc_shareCodeArr[K];
   mc_shareCodeVal = mc_shareCodeArr[K];
   joy_shareCodeVal = joy_shareCodeArr[K];
-  for (let i = 0; i < 9; i++) {
+  zz_shareCodeVal = zz_shareCodeArr[K];
+  for (let i = 0; i < 10; i++) {
     (function (i) {
       setTimeout(
         function () {
@@ -121,8 +130,10 @@ function all() {
           if (i == 5 )
           execmc_shareCode();//京东萌宠  
 	  if (i == 6 )
-          execjoy_shareCode();//京东CrazyJoy任务  
-        else  if (i == 7 ) {
+          execjoy_shareCode();//京东CrazyJoy任务
+	  if (i == 7 )
+          execzz_shareCode();//京东赚赚任务	
+        else  if (i == 8 ) {
         console.log('东东工厂Body:');
   	console.log( $.dd_shareCodeBody);
   	console.log('\r\n京喜工厂Body:');
@@ -135,7 +146,7 @@ function all() {
 	console.log( $.mc_shareCodeBody);
 	console.log('\r\nj京东CrazyJoyBody:');
 	console.log( $.joy_shareCodeBody);
-     }else if (i == 8){  
+     }else if (i == 9){  
        if ( K < dd_shareCodeArr.length - 1) {
               K += 1;
               all();
@@ -152,11 +163,12 @@ function all() {
   }
 }
 
-// 用户名
+// 用户名funtion0
 function info() {
       tz +=`\n========== 【第${K+1}个账号】 ==========\n`
 }
 
+//funtion1
 function execdd_shareCode() {
   return new Promise((resolve) => {
     const url = { 
@@ -185,7 +197,7 @@ function execdd_shareCode() {
   })
 }
 
-
+//funtion2
 function execjx_shareCode() {
   return new Promise((resolve) => {
     const url = { 
@@ -214,7 +226,7 @@ function execjx_shareCode() {
   })
 }
 
-
+//funtion3
 function execzd_shareCode() {
   return new Promise((resolve) => {
     const url = { 
@@ -243,7 +255,7 @@ function execzd_shareCode() {
   })
 }
 
-
+//funtion4
 function execnc_shareCode() {
   return new Promise((resolve) => {
     const url = { 
@@ -273,7 +285,7 @@ function execnc_shareCode() {
 }
 
 
-
+//funtion5
 function execmc_shareCode() {
   return new Promise((resolve) => {
     const url = { 
@@ -302,6 +314,7 @@ function execmc_shareCode() {
   })
 }
 
+//funtion6
 function execjoy_shareCode() {
   return new Promise((resolve) => {
     const url = { 
@@ -330,6 +343,36 @@ function execjoy_shareCode() {
   })
 }
 
+//funtion7
+function execzz_shareCode() {
+  return new Promise((resolve) => {
+    const url = { 
+       url: 'https://code.chiang.fun/api/v1/jd/jdzz/create/'+zz_shareCodeVal,
+       headers: {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'},
+	}
+    $.get(url,(err, resp, data)=> {  
+      try {
+        $.zz_shareCodeBody = data
+	const obj = JSON.parse(data)
+                
+                if (obj.code == 200) {
+                    zzmsg = `提交成功`
+                } else if (obj.code == 400) {
+                    zzmsg = `代码已存在`
+                } else {
+                    zzmsg = '发生未知错误'
+                }
+        tz += `京东赚赚:`+ zzmsg +`\n`
+      } catch (e) {
+        $.logErr(e, resp)
+      } finally {
+        resolve()
+      }
+    })
+  })
+}
+
+//funtion8
 function showmsg() {
   return new Promise((resolve) => {
     $.msg(jsname, "", tz); 
