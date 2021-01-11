@@ -1,9 +1,9 @@
 {
-  "id": "photonmang.app.sub",
-  "name": "photonmang应用订阅",
-  "author": "@photonmang",
+  "id": "cjw20203.app.sub",
+  "name": "cjw20203应用订阅",
+  "author": "@cjw20203",
   "icon": "https://avatars3.githubusercontent.com/u/42340256?s=460&v=4",
-  "repo": "https://github.com/photonmang/quantumultX",
+  "repo": "https://github.com/cjw20203/WilliamChan/main",
   "apps": [
     {
       "id": "xxysrw",
