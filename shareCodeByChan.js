@@ -144,9 +144,9 @@ function all() {
   	console.log( $.nc_shareCodeBody);
   	console.log('\r\n京东萌宠Body:');
 	console.log( $.mc_shareCodeBody);
-	console.log('\r\nj京东CrazyJoyBody:');
+	console.log('\r\n京东CrazyJoyBody:');
 	console.log( $.joy_shareCodeBody);
-	console.log('\r\nj京东赚赚Body:');
+	console.log('\r\n京东赚赚Body:');
 	console.log( $.zz_shareCodeBody);	
      }else if (i == 9){  
        if ( K < dd_shareCodeArr.length - 1) {
