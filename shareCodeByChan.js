@@ -146,6 +146,8 @@ function all() {
 	console.log( $.mc_shareCodeBody);
 	console.log('\r\nj京东CrazyJoyBody:');
 	console.log( $.joy_shareCodeBody);
+	console.log('\r\nj京东赚赚Body:');
+	console.log( $.zz_shareCodeBody);	
      }else if (i == 9){  
        if ( K < dd_shareCodeArr.length - 1) {
               K += 1;
