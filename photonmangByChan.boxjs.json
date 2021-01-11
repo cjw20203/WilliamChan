@@ -216,16 +216,19 @@
 	       "mc_shareCode1",
 	       "dd_shareCode1",
 	       "jx_shareCode1",
+	       "joy_shareCode1",
 	       "zd_shareCode2",
 	       "nc_shareCode2",
 	       "mc_shareCode2",
 	       "dd_shareCode2",
 	       "jx_shareCode2",
+	      "joy_shareCode2",
 	       "zd_shareCode3",
 	       "nc_shareCode3",
 	       "mc_shareCode3",
 	       "dd_shareCode3",
-	       "jx_shareCode3"
+	       "jx_shareCode3",
+	      "joy_shareCode3",
       ],
       "settings": [
         {
@@ -355,9 +358,9 @@
           "desc": "此处请填写你的京东CrazyJoy码"
         }	      
       ],
-      "author": "@photonmang",
-      "repo": "https://raw.githubusercontent.com/photonmang/quantumultX/master/cache/shareCode.js",
-      "script": "https://github.com/photonmang/quantumultX",
+      "author": "@cjw20203",
+      "repo": "https://raw.githubusercontent.com/cjw20203/WilliamChan/main/shareCodeByChan.js",
+      "script": "https://github.com/cjw20203/WilliamChan",
       "icons": [ "https://raw.githubusercontent.com/Orz-3/mini/master/jd.png","https://raw.githubusercontent.com/Orz-3/task/master/jd.png"]
     }
   ]
