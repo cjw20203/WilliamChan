@@ -4,6 +4,7 @@
 //1.浏览器打开 https://m.q.qq.com/a/s/f9726d0a930319a7dd35bbcc8e42dc60 
 
 //2.重写引用https://raw.githubusercontent.com/xingliuchao/jd/main/QQreadCookie.conf
+//(修改后重写引用)https://raw.githubusercontent.com/cjw20203/WilliamChan/main/QQreadCookieByChan.conf
 
 //--书库-进一本书看 5秒左右 然后返回，获取body和cookie 共3条
 
