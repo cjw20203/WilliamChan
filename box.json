@@ -16,7 +16,7 @@
 	      "4.从书库看①本📕新书📕新书！！看5秒然后左上角返回，获取cookie与body❀共3项。☞保存设置😀",
 	      "5.切换QQ账号♥♥循环1-3-4（2已引用，不必重复）重新获取下个账号.可以N多账号，6后面直接填写7.8..❗️完成后禁用重写规则",
 	      "6.感谢ziye付出"],
-      "keys": ["qqreadbd", "qqreadtimeurl", "qqreadtimehd", "qqreadbd2", "qqreadtimeurl2", "qqreadtimehd2", "qqreadbd3", "qqreadtimeurl3", "qqreadtimehd3", "qqreadbd4", "qqreadtimeurl4", "qqreadtimehd4", "qqreadbd5", "qqreadtimeurl5", "qqreadtimehd5", "qqreadbd6", "qqreadtimeurl6", "qqreadtimehd6", "qqreadbd7", "qqreadtimeurl7", "qqreadtimehd7", "qqreadbd8", "qqreadtimeurl8", "qqreadtimehd8", "qqreadbd9", "qqreadtimeurl9", "qqreadtimehd9", "qqreadbd10", "qqreadtimeurl10", "qqreadtimehd10"],
+      "keys": ["qqreadbd", "qqreadtimeurl", "qqreadtimehd", "qqreadbd2", "qqreadtimeurl2", "qqreadtimehd2", "qqreadbd3", "qqreadtimeurl3", "qqreadtimehd3", "qqreadbd4", "qqreadtimeurl4", "qqreadtimehd4", "qqreadbd5", "qqreadtimeurl5", "qqreadtimehd5", "qqreadbd6", "qqreadtimeurl6", "qqreadtimehd6", "qqreadbd7", "qqreadtimeurl7", "qqreadtimehd7", "qqreadbd8", "qqreadtimeurl8", "qqreadtimehd8", "qqreadbd9", "qqreadtimeurl9", "qqreadtimehd9", "qqreadbd10", "qqreadtimeurl10", "qqreadtimehd10","qqreadbd11", "qqreadtimeurl11", "qqreadtimehd11", "qqreadbd12", "qqreadtimeurl12", "qqreadtimehd12", "qqreadbd13", "qqreadtimeurl13", "qqreadtimehd13", "qqreadbd14", "qqreadtimeurl14", "qqreadtimehd14", "qqreadbd15", "qqreadtimeurl15", "qqreadtimehd15"],
     "settings": [{
         "id": "qeSuffix",
         "name": "要抓账号",
@@ -33,7 +33,7 @@
       },
 	{
         "id": "qeCASH",
-        "name": "体现金额",
+        "name": "提现金额",
         "val": "0",
         "type": "number",
         "desc": "要提现金额数 0,1,2,10"
