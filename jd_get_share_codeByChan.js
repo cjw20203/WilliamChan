@@ -204,6 +204,7 @@ function getJdFactory() {
                     console.log(
                       `【账号${$.index}（${$.nickName || $.UserName}）东东工厂】${$.dd_shareCodeVal}`
                     );
+                    execdd_shareCode($.dd_shareCodeVal);
                   }
                 });
               }
@@ -218,6 +219,35 @@ function getJdFactory() {
     );
   })
 }
+
+function execdd_shareCode(dd_shareCode) {
+  return new Promise((resolve) => {
+    const url = { 
+       url: 'http://api.turinglabs.net/api/v1/jd/ddfactory/create/'+dd_shareCode,
+       headers: {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'}
+	}
+    $.get(url,(err, resp, data)=> {  
+      try {
+        $.dd_shareCodeBody = data
+	const obj = JSON.parse(data)
+                
+                if (obj.code == 200) {
+                    $.ddmsg = `提交成功`
+                } else if (obj.code == 400) {
+                    $.ddmsg = `代码已存在`
+                } else {
+                    $.ddmsg = '发生未知错误'
+                }
+        console.log(`东东工厂:`+ $.ddmsg);
+      } catch (e) {
+        $.logErr(e, resp)
+      } finally {
+        resolve()
+      }
+    })
+  })
+}
+
 function getJxFactory(){
   const JX_API_HOST = "https://m.jingxi.com";
 
