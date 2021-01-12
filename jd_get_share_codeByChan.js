@@ -24,6 +24,9 @@ const $ = new Env("获取互助码");
 const JD_API_HOST = "https://api.m.jd.com/client.action";
 let cookiesArr = [], cookie = '', message;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
+
+let dd_shareCodeVal = "";
+
 !function (n) {
   "use strict";
 
@@ -197,8 +200,9 @@ function getJdFactory() {
                 $.taskVos = data.data.result.taskVos; //任务列表
                 $.taskVos.map((item) => {
                   if (item.taskType === 14) {
+                    $.dd_shareCodeVal = item.assistTaskDetailVo.taskToken;
                     console.log(
-                      `【账号${$.index}（${$.nickName || $.UserName}）东东工厂】${item.assistTaskDetailVo.taskToken}`
+                      `【账号${$.index}（${$.nickName || $.UserName}）东东工厂】${$.dd_shareCodeVal}`
                     );
                   }
                 });
