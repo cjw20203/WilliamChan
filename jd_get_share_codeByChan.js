@@ -204,6 +204,7 @@ function getJdFactory() {
                     console.log(
                       `【账号${$.index}（${$.nickName || $.UserName}）东东工厂】${$.dd_shareCodeVal}`
                     );
+		   execdd_shareCode();
                   }
                 });
               }
@@ -681,7 +682,6 @@ async function getJoy(){
 async function getShareCode() {
   console.log(`======账号${$.index}开始======`)
   await getJdFactory()
-  await execdd_shareCode()
   await getJxFactory()
   await getJxNc()
   await getJdPet()
