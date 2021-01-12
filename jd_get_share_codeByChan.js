@@ -204,7 +204,6 @@ function getJdFactory() {
                     console.log(
                       `【账号${$.index}（${$.nickName || $.UserName}）东东工厂】${$.dd_shareCodeVal}`
                     );
-                    execdd_shareCode($.dd_shareCodeVal);
                   }
                 });
               }
@@ -220,10 +219,10 @@ function getJdFactory() {
   })
 }
 
-function execdd_shareCode(dd_shareCode) {
+function execdd_shareCode() {
   return new Promise((resolve) => {
     const url = { 
-       url: 'http://api.turinglabs.net/api/v1/jd/ddfactory/create/'+dd_shareCode,
+       url: 'http://api.turinglabs.net/api/v1/jd/ddfactory/create/'+$.dd_shareCodeVal,
        headers: {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'}
 	}
     $.get(url,(err, resp, data)=> {  
@@ -682,6 +681,7 @@ async function getJoy(){
 async function getShareCode() {
   console.log(`======账号${$.index}开始======`)
   await getJdFactory()
+  await execdd_shareCode()
   await getJxFactory()
   await getJxNc()
   await getJdPet()
