@@ -1,4 +1,10 @@
 
+//cookies
+//
+//
+//
+//
+
 const $ = new Env('互助码')
 $.zdUrl = 'http://api.turinglabs.net/api/v1/jd/bean/create/ysjjl6inbch3nbnfzw26z2uxy25oqz3mqnlbuji/'  // 种豆得豆
 $.ncUrl = 'http://api.turinglabs.net/api/v1/jd/farm/create/9cf93378a95d4335b72708f11c8c9cd7/'  // 农场
