@@ -44,7 +44,7 @@ let nowTime = new Date().getTime() + new Date().getTimezoneOffset()*60*1000 + 8*
     if ($.isNode()) await notify.sendNotify($.name + '活动已结束', `请删除此脚本\n咱江湖再见`);
     return
   }
-  $.shareCode = '3CXBs51'
+  $.shareCode = 'yIrVpTx'
   for (let i = 0; i < cookiesArr.length; i++) {
     cookie = cookiesArr[i];
     if (cookie) {
@@ -316,11 +316,11 @@ function getEid(arr) {
 
 function getUA(){
   $.UA = `jdapp;iPhone;10.2.0;13.1.2;${randomString(40)};M/5.0;network/wifi;ADID/;model/iPhone8,1;addressid/2308460611;appBuild/167853;jdSupportDarkMode/0;Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1;`
-  rebateCode = '3CXBs51'
+  rebateCode = 'yIrVpTx'
   if($.index != 1){
-    let arr = [rebateCodes,'3CXBs51']
+    let arr = [rebateCodes,'yIrVpTx']
     rebateCode = arr[Math.floor(Math.random() * arr.length)] || rebateCode
-    if(!rebateCode) rebateCode = '3CXBs51'
+    if(!rebateCode) rebateCode = 'yIrVpTx'
   }
   console.log(rebateCode)
 }
